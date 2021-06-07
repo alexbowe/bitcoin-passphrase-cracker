@@ -54,11 +54,9 @@ class FingerprintChecker(object):
 
 
 def guess_all(inputs, predicate):
-    # Make multiproc/GPU accelerated/distributed
     for input in inputs:
         if predicate(input): return input
 
-# https://iancoleman.io/bip39/
 mnemonic = "chase wonder voice rack custom sport fix decline body hollow wreck stay dress resist space solid gospel pumpkin shoot tank cable dignity own pigeon"
 target_fingerprint = b"6aa00e9a"
 best_guess = "hysterichorsebatterystaple"
